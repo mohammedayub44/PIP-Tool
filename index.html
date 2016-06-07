@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+		
+		<!-- Link to the CSS sheet for the Introduction Page -->
+		<link type = "text/css" rel = "stylesheet" href = "css/css_index.css" />
+		
+		<!-- Form  -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>PIP Tool</title>
+					
+	</head>	
+
+	<body id="main_body" >
+		
+		
+<!-- 		<div class = "div1">
+			<img src = "img/NFPA Logo.jpg" id="nfpa_img"> </img>
+		</div> -->
+		
+	<div class ="container">
+		
+		<div class = "div2">
+			<p id="title"> Property Inspection Prioritization - PIP TOOL </p>
+		</div>
+		
+		<div class = "div3">
+			<p id="mainText"> 
+			The aim of the PIP tool is to address the issues of facilitating AHJ's in prioritizing property inspection. Due to limited funding, only about 10% of properties are typically inspected. 
+			NFPA is developing a PIP tool – it’s a simple model that requires a minimum amount of input data.
+			In simple terms, the model will rank the inspection priority of a property based on its occupancy and several other risk factors. We would like your assistance in making the analytics/model behind the tool more “intelligent”.
+			</p>
+		</div>
+		
+		<div class = "div4">
+			<p id="rulesText"> <strong> Some point to be noted before filling out the sheet: </strong>
+				<ol>
+					<li>Feedback is “RISK based” only (No local political considerations)</li>
+					<li>There are 50 property field, mark “1” to select only 20 properties (Prioritizing by risk)</li>
+					<li>The property scenarios are randomly generated samples</li>
+					<li>Responses will be anonymous (We will be getting feedback from 1000’s of sources) and no personal information will be published </li>
+				</ol>
+			</p>
+		</div>
+
+		
+		<div class = "div5">
+			<p> 
+				<font color="white">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </font>
+				&nbsp All Fields are Mandatory 
+			</p>
+			
+			<label id="div5_name"> <font color="white">*</font> Name &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_phone"> <font color="white">*</font> Phone &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_email"> <font color="white">*</font> Email &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_affiliation"> <font color="white">*</font> Affiliation &nbsp&nbsp</label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_city"> <font color="white">*</font> City &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_state"> <font color="white">*</font> State Code &nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			<br> <br>
+			
+			<label id="div5_zipcode"> <font color="white">*</font> Zip Code &nbsp &nbsp </label>
+			<input type="text"  value="" id="name_box"/>
+			
+					<!-- Start Butoon - To Table html  -->
+			<div class = "div6">
+				<a href = "table.html" onclick = "startClick();"> <img id = "start" src = "img/start.png" /></a>
+			</div>
+			
+		</div>
+		
+	</div>
+		
+		
+
+		
+
+	</body>
+	
+</html>

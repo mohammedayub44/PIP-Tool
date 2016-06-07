@@ -1,0 +1,111 @@
+body{
+	margin : 0;
+		background-image : url("../img/nfpa.PNG");
+	background-repeat : no-repeat;
+		height : inherit;
+	width : inherit;
+}
+
+
+.container{
+
+	height : inherit;
+	width : inherit;
+	color : #ccffcc;
+	margin:0;
+}
+
+
+/*   -----------NFPA Logo------------------------- */
+/* .div1{
+	position : relative;
+	left : 22%;
+	height: 105px;
+	width: 100%;
+}
+
+#nfpa_img {
+	height: 100px;
+	width: 800px;
+}
+ */
+
+/*   -------------Title - PIP Tool----------------------- */
+.div2{
+	position : relative;
+	top : 0%;
+	left : 25%;
+	height: 70px;
+	width: 700px;
+	padding-top : 150px;
+	text-decoration: underline;
+}
+
+p#title{
+	display : inline-block;
+	height: 50px;
+	width: 700px;
+	font-weight: bold;
+	font-size : 28px;
+	margin : 0;
+	padding : 0;
+}
+
+/*   --------------Intro---------------------- */
+.div3{
+	position : relative;
+	left : 2%;
+	height: 70px;
+	width: 1150px;
+}
+
+/* Description of the tool  */
+#mainText{
+	font-size: 14px;
+	font-family: calibri;
+	text-align: justify;
+	font-weight: bold;
+}
+
+/*   ----------------Rules-------------------- */
+.div4{
+	position : relative;
+	left : 2%;
+	height: 110px;
+	width: 800px;
+	font-size: 14px;
+	font-family: calibri;
+	font-weight: bold;	
+}
+
+#rulesText{
+	font-weight: bold;	
+	font-size: 16px;
+}
+
+/*   ----------------Form Fields-------------------- */
+.div5{
+	display : inline-block;
+	position : relative;
+	left : 35%;
+	height: 350px;
+	width: 600px;
+	font-weight: bold;
+	padding-right : 50px;
+	margin : 0;
+}
+
+
+.div6{
+	position : relative;
+	left : 23%;
+	padding-top : 10px;
+	height: 70px;
+	width: 70px;
+	align : center;
+}
+
+#start{
+	height:50px;
+	width: 50px;
+}

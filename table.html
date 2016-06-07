@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Link to the CSS sheet for the Introduction Page -->
+	<link type = "text/css" rel = "stylesheet" href = "table.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- Uploading the google font -->
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+	
+	<div id="content">
+		<table class="tg" id="mytable">
+			<thead>
+			  <tr>
+				<th class="tg-51ic">ID</th>
+				<th class="tg-51ic">Occupancy<br>  Type</th>
+				<th class="tg-51ic">Neighborhood<br>  Incomes</th>
+				<th class="tg-51ic">Last Inspected</th>
+				<th class="tg-51ic">Fire Protection<br>  Systems</th>
+				<th class="tg-51ic">Self<br>  Evacuation</th>
+				<th class="tg-51ic">Building Fire<br>  Vulnerability</th>
+				<th class="tg-51ic">Likely FD<br>  Suppression Outcome</th>
+				<th class="tg-51ic">Economic Impact</th>
+				<th class="tg-51ic">Inspect</th>
+			  </tr>
+			</thead>
+	  
+			<tbody  id="tblRootCauseBody" data-bind="foreach: scenarios">
+			  <tr class="tg-39vz" >
+				<td class="tg-39vz"  data-bind="text: ID, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Occupancy_Type, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"  data-bind="text: Neighborhood_Incomes, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Last_Inspected, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Fire_Protection_Systems, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Institutional_Occupancy, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Building_Fire_Vulnerability, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"   data-bind="text: Likely_FD_Suppression_Outcome, css: {'alternateRow': $index()%2}"></td>
+				<td class="tg-39vz"  data-bind="text: Economic_Impact, css: {'alternateRow': $index()%2}"> </td>
+				<td class="tg-39vz"   ><input type="checkbox" data-bind="checked: Inspect, css: {'alternateRow': $index()%2}, attr: {rowid: $data.ID }" onchange="getCounter(this)"/></td>
+			  </tr>
+		</tbody>
+		</table>
+	
+	</div>
+	
+<div id="counterModal" class="modal fade" role="dialog" style="   
+    display: inline-block;	
+    position: fixed;
+	color: darkgreen;
+	font-weight: bold;
+	font-size: 300pt;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+    margin: auto;
+	width: 450px;
+	height: 100%;
+    background-color: transparent;">
+       <span id="counter" ></span>
+    </div>
+	
+		
+	<!-- Generating the random values -->
+	<script src="table-populate.js"></script>
+	
+	<div id="resultUI"> 
+<!-- 	    <label id="enter_name">Enter Your Name<label/>
+		<input type="text"  value="" id="name_box"/> -->
+		<input type="button" id="SubmitButton" onclick="onExportCSVClicked();" value="Submit" id="export_button" /> 
+	</div>
+	
+	
+	
+</body>
+
+</html>

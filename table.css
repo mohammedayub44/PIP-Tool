@@ -1,0 +1,95 @@
+#SubmitButton{
+	position : relative;
+	left : 45%;
+	height : 50px;
+	width : 100px;
+}
+
+
+
+/* Table - CSS below */
+/* Table - tg */
+.tg{
+	border-spacing:4px;
+	border-color:#aaa;
+	margin:5px auto;
+	}
+	
+/* Rows */	
+.tg td{
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#aaa;
+	color:#333;
+	background-color:#fff;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	}
+
+/* Table Heading */
+.tg th{
+	font-family: 'Dosis', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:0px;
+	overflow:hidden;
+	word-break:normal;
+	border-color:#aaa;
+	color:#fff;
+	background-color:#b34700;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	}
+
+/* Alt. Rows - Yellow Color*/	
+.tg  .alternateRow
+{
+	background-color:#ffc299;
+	font-size:14px;
+	font-family:'Dosis', cursive, sans-serif !important;
+	text-align:center;
+	vertical-align:top
+}
+
+/* Alt. Rows - Yellow Color*/	
+.tg .tg-7h6s{
+	background-color:#ffc299;
+	font-size:14px;
+	font-family:'Dosis', cursive, sans-serif !important;
+	text-align:center;
+	vertical-align:top
+	}
+	
+/* Header Row */
+.tg .tg-51ic{
+	font-weight:bold;
+	font-size:20px;
+	font-family:'Dosis', cursive, sans-serif !important;
+	text-align:center;
+	vertical-align:top
+	}
+	
+/* Alt. Rows - White Color*/	
+.tg .tg-39vz{
+
+	font-size:14px;
+	font-family:'Dosis', cursive, sans-serif !important;
+	text-align:center;
+	vertical-align:top
+	}
+
+.tg .tg-39vz td#509{
+	font-size:20px;
+	font-family:"Comic Sans MS", cursive, sans-serif !important;
+	text-align:center;
+	vertical-align:top
+	}
+
+	
